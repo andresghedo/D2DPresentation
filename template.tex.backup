@@ -80,7 +80,6 @@
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 
-
 %----------------------------------------------------------------------------------------
 %   TITLE PAGE - TITLE SLIDE 1
 %----------------------------------------------------------------------------------------
@@ -182,50 +181,20 @@
 \end{frame}
 
 
-%----------------------------------------------------------------------------------------
-%   PROBABILITA - SLIDE X
-%----------------------------------------------------------------------------------------
 \begin{frame}
 \frametitle{Probabilità di parcheggio}
 
 \begin{itemize}
   \item Sincronizzazione sugli eventi parcheggio/rilascio della cella \textit{i}
-  \item Eventi parcheggio $E\ped{i}\ap{p}$ e rilascio $E\ped{i}\ap{r}$
-  \item Slot totali $N\ped{i}\ap{t}$ noto a priori
-  \item Slot occupati:
-  \\
-  {\centering $N\ped{i}\ap{o} = E\ped{i}\ap{p} - E\ped{i}\ap{r}$\par}
-  \vspace{2mm}
-  \item Tasso di occupazione:
-  \\
-  {\centering $p\ped{i}\ap{o} = \frac{N\ped{i}\ap{o}}{N\ped{i}\ap{t}}$\par}
-  \vspace{2mm}
+  \item Eventi parcheggio nella cella i
+  \item Eventi rilascio nella cella i
+  \item Slot totali nella cella i
+  \item Slot occupati nella cella i
+  \item Tassi di occupazione di una cella
   \item Probabilità di trovare parcheggio:
   \\
-  \vspace{4mm}
-  \centering \framebox{$p\ped{i}\ap{f} = 1 - p\ped{i}\ap{o}$}
+  \centering a
 \end{itemize}
-\end{frame}
-
-
-%----------------------------------------------------------------------------------------
-%   PROBABILITA - SLIDE X
-%----------------------------------------------------------------------------------------
-\begin{frame}
-\frametitle{Simulazione}
-\begin{itemize}
-  \item OMNeT++, Veins, SUMO
-  \item Zona nord-est di Bologna 1.5km x 2.5km
-  \item Verificare l’efficacia del processo di spreading
-  \item ~3000 veicoli in 1800 simsec
-  \item Tecnologie considerate : 
-    \\V2V 802.11p
-    \\WiFi Direct D2D
-    \\Bluetooth
-\end{itemize}
-\begin{figure}
-\includegraphics[scale=0.25]{img/sumo-bolo.png}
-\end{figure}
 \end{frame}
 
 
