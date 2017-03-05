@@ -107,6 +107,9 @@
 \begin{itemize}
   \item Il parcheggio
   \item Il Crowdsensing
+  \item Simulazione e Modellazione
+  \item Risultati
+  \item Conclusioni
 \end{itemize}
 \end{frame}
 
@@ -209,24 +212,150 @@
 
 
 %----------------------------------------------------------------------------------------
-%   PROBABILITA - SLIDE X
+%   SIMULAZIONE - SLIDE X
 %----------------------------------------------------------------------------------------
 \begin{frame}
-\frametitle{Simulazione}
-\begin{itemize}
-  \item OMNeT++, Veins, SUMO
-  \item Zona nord-est di Bologna 1.5km x 2.5km
-  \item Verificare l’efficacia del processo di spreading
-  \item ~3000 veicoli in 1800 simsec
-  \item Tecnologie considerate : 
-    \\V2V 802.11p
-    \\WiFi Direct D2D
-    \\Bluetooth
-\end{itemize}
-\begin{figure}
-\includegraphics[scale=0.25]{img/sumo-bolo.png}
-\end{figure}
+\frametitle{Simulazione e Modellazione}
+\begin{columns}
+  \begin{column}{0.65\textwidth}
+    \begin{itemize}
+      \item OMNeT++, Veins, SUMO
+      \item Zona nord-est di Bologna 1.5km x 2.5km
+      \item Verificare l’efficacia del processo di spreading
+      \item circa 3000 veicoli in 1800 simsec
+      \item Modulo \textit{SmartParking} per modellazione logica
+      \item Tecnologie considerate : 
+	\begin{itemize}
+	  \item V2V \textit{802.11p}
+	  \item D2D \textit{WiFi Direct} 
+	  \item \textit{Bluetooth}
+	\end{itemize}
+    \end{itemize}
+  \end{column}
+
+  \begin{column}{0.35\textwidth}
+    \begin{figure}
+    \includegraphics[width=\columnwidth]{img/sumo-bolo2.png}
+    \end{figure}
+  \end{column}
+\end{columns}
 \end{frame}
+
+
+%----------------------------------------------------------------------------------------
+%   RISULTATI 1 - SLIDE X
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Risultati (1)}
+\begin{itemize}
+  \item convergenza sulla conoscenza della cella corrente e dello scenario generale
+\end{itemize}
+\begin{columns}
+  \begin{column}{0.45\textwidth}
+    \begin{figure}
+    \includegraphics[width=\columnwidth]{img/graphics/local_accuracy.png}
+    \end{figure}
+    
+  \end{column}
+  \begin{column}{0.45\textwidth}
+    \begin{figure}
+    \includegraphics[width=\columnwidth]{img/graphics/global_accuracy.png}
+    \end{figure}
+  \end{column}
+\end{columns}
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
+%   RISULTATI 2 - SLIDE X
+%----------------------------------------------------------------------------------------
+\begin{frame}[shrink=50]
+\frametitle{Risultati (2)}
+\begin{columns}
+  \begin{column}{0.45\textwidth}
+    \vspace{30mm}
+    \begin{figure}
+    \includegraphics[width=\columnwidth]{img/graphics/distance.png}
+    \end{figure}
+    \begin{itemize}
+      \item  L'accuratezza media decresce all'aumentare della distanza dalla posizione corrente
+      \item  L'accuratezza migliore nel raggio di 500m della posizione corrente (sincronizzazioni su cella corrente e adiacenti)
+    \end{itemize}
+  \end{column}
+  \begin{column}{0.45\textwidth}
+    \vspace{20mm}
+    \begin{figure}
+    \includegraphics[width=\columnwidth]{img/graphics/n_car.png}
+    \end{figure}
+    \begin{itemize}
+      \item  Tasso di partecipazione determinante per la tecnologia D2D \textit{WiFi Direct}
+    \end{itemize}
+  \end{column}
+\end{columns}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%   SCREENSHOT 1 - SLIDE X
+%----------------------------------------------------------------------------------------
+% \begin{frame}
+% \frametitle{Screenshot 1}
+% \begin{columns}
+%   \begin{column}{0.3\textwidth}
+%     \begin{figure}
+%     \raggedleft
+%     \setlength{\fboxsep}{0pt}
+%     \setlength{\fboxrule}{0.1pt}
+%     \fcolorbox{blue}{blue}{\includegraphics[width=\columnwidth]{img/screenshot/map2.jpg}}
+%     \end{figure}
+%   \end{column}
+%   \begin{column}{0.3\textwidth}
+%     \begin{figure}
+%     \raggedleft
+%     \setlength{\fboxsep}{0pt}
+%     \setlength{\fboxrule}{0.1pt}
+%     \fcolorbox{blue}{blue}{\includegraphics[width=\columnwidth]{img/screenshot/state_conn.jpg}}
+%     \end{figure}
+%   \end{column}
+%   \begin{column}{0.3\textwidth}
+%     \begin{figure}
+%     \raggedleft
+%     \setlength{\fboxsep}{0pt}
+%     \setlength{\fboxrule}{0.1pt}
+%     \fcolorbox{blue}{blue}{\includegraphics[width=\columnwidth]{img/screenshot/activity_recogn.jpg}}
+%     \end{figure}
+%   \end{column}
+% \end{columns}
+% \end{frame}
+
+
+%----------------------------------------------------------------------------------------
+%   SCREENSHOT 2 - SLIDE X
+%----------------------------------------------------------------------------------------
+% \begin{frame}
+% \frametitle{Screenshot 2}
+% \begin{columns}
+%   \begin{column}{0.1\textwidth}
+%   \end{column}
+%   \begin{column}{0.3\textwidth}
+%     \begin{figure}
+%     \raggedleft
+%     \setlength{\fboxsep}{0pt}
+%     \setlength{\fboxrule}{0.1pt}
+%     \fcolorbox{blue}{blue}{\includegraphics[width=\columnwidth]{img/screenshot/park_event_list.jpg}}
+%     \end{figure}
+%   \end{column}
+%   \begin{column}{0.3\textwidth}
+%     \begin{figure}
+%     \raggedleft
+%     \setlength{\fboxsep}{0pt}
+%     \setlength{\fboxrule}{0.1pt}
+%     \fcolorbox{blue}{blue}{\includegraphics[width=\columnwidth]{img/screenshot/last_sync.jpg}}
+%     \end{figure}
+%   \end{column}
+%   \begin{column}{0.1\textwidth}
+%   \end{column}
+% \end{columns}
+% \end{frame}
 
 
 %----------------------------------------------------------------------------------------
@@ -235,7 +364,7 @@
 \begin{frame}
 \frametitle{Screenshot 1}
 \begin{columns}
-  \begin{column}{0.3\textwidth}
+  \begin{column}{0.25\textwidth}
     \begin{figure}
     \raggedleft
     \setlength{\fboxsep}{0pt}
@@ -243,35 +372,15 @@
     \fcolorbox{blue}{blue}{\includegraphics[width=\columnwidth]{img/screenshot/map2.jpg}}
     \end{figure}
   \end{column}
-  \begin{column}{0.3\textwidth}
+  \begin{column}{0.25\textwidth}
     \begin{figure}
     \raggedleft
     \setlength{\fboxsep}{0pt}
     \setlength{\fboxrule}{0.1pt}
-    \fcolorbox{blue}{blue}{\includegraphics[width=\columnwidth]{img/screenshot/state_conn.jpg}}
+    \fcolorbox{blue}{blue}{\includegraphics[width=\columnwidth]{img/screenshot/state_synced_connected.jpg}}
     \end{figure}
   \end{column}
-  \begin{column}{0.3\textwidth}
-    \begin{figure}
-    \raggedleft
-    \setlength{\fboxsep}{0pt}
-    \setlength{\fboxrule}{0.1pt}
-    \fcolorbox{blue}{blue}{\includegraphics[width=\columnwidth]{img/screenshot/activity_recogn.jpg}}
-    \end{figure}
-  \end{column}
-\end{columns}
-\end{frame}
-
-
-%----------------------------------------------------------------------------------------
-%   SCREENSHOT 2 - SLIDE X
-%----------------------------------------------------------------------------------------
-\begin{frame}
-\frametitle{Screenshot 2}
-\begin{columns}
-  \begin{column}{0.1\textwidth}
-  \end{column}
-  \begin{column}{0.3\textwidth}
+  \begin{column}{0.25\textwidth}
     \begin{figure}
     \raggedleft
     \setlength{\fboxsep}{0pt}
@@ -279,7 +388,7 @@
     \fcolorbox{blue}{blue}{\includegraphics[width=\columnwidth]{img/screenshot/park_event_list.jpg}}
     \end{figure}
   \end{column}
-  \begin{column}{0.3\textwidth}
+  \begin{column}{0.25\textwidth}
     \begin{figure}
     \raggedleft
     \setlength{\fboxsep}{0pt}
@@ -287,10 +396,9 @@
     \fcolorbox{blue}{blue}{\includegraphics[width=\columnwidth]{img/screenshot/last_sync.jpg}}
     \end{figure}
   \end{column}
-  \begin{column}{0.1\textwidth}
-  \end{column}
 \end{columns}
 \end{frame}
+
 
 %------------------------------------------------
 

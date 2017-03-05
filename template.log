@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.12)  3 MAR 2017 16:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.12)  5 MAR 2017 11:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1149,7 +1149,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 File: img/arch_general.png Graphic file (type png)
 
 <use img/arch_general.png>
-Package pdftex.def Info: img/arch_general.png used on input line 171.
+Package pdftex.def Info: img/arch_general.png used on input line 174.
 (pdftex.def)             Requested size: 136.91603pt x 135.34846pt.
  [5
 
@@ -1157,7 +1157,7 @@ Package pdftex.def Info: img/arch_general.png used on input line 171.
 <img/arch_soft.png, id=164, 745.78625pt x 320.19624pt>
 File: img/arch_soft.png Graphic file (type png)
  <use img/arch_soft.png>
-Package pdftex.def Info: img/arch_soft.png used on input line 182.
+Package pdftex.def Info: img/arch_soft.png used on input line 185.
 (pdftex.def)             Requested size: 186.4461pt x 80.04886pt.
 
 [6
@@ -1165,59 +1165,82 @@ Package pdftex.def Info: img/arch_soft.png used on input line 182.
  <./img/arch_soft.png>] [7
 
 ]
-<img/sumo-bolo.png, id=225, 687.56876pt x 405.515pt>
-File: img/sumo-bolo.png Graphic file (type png)
- <use img/sumo-bolo.png>
-Package pdftex.def Info: img/sumo-bolo.png used on input line 229.
-(pdftex.def)             Requested size: 171.89177pt x 101.3785pt.
+<img/sumo-bolo2.png, id=225, 960.58875pt x 700.6175pt>
+File: img/sumo-bolo2.png Graphic file (type png)
 
-[8
+<use img/sumo-bolo2.png>
+Package pdftex.def Info: img/sumo-bolo2.png used on input line 242.
+(pdftex.def)             Requested size: 119.80544pt x 87.37384pt.
+ [8
 
- <./img/sumo-bolo.png>]
-<img/screenshot/map2.jpg, id=254, 1084.05pt x 1927.2pt>
+ <./img/sumo-bolo2.png>]
+<img/graphics/local_accuracy.png, id=253, 505.89pt x 311.1625pt>
+File: img/graphics/local_accuracy.png Graphic file (type png)
+
+<use img/graphics/local_accuracy.png>
+Package pdftex.def Info: img/graphics/local_accuracy.png used on input line 266
+.
+(pdftex.def)             Requested size: 154.03183pt x 94.74062pt.
+
+<img/graphics/global_accuracy.png, id=254, 505.89pt x 312.16624pt>
+File: img/graphics/global_accuracy.png Graphic file (type png)
+
+<use img/graphics/global_accuracy.png>
+Package pdftex.def Info: img/graphics/global_accuracy.png used on input line 26
+6.
+(pdftex.def)             Requested size: 154.03183pt x 95.04623pt.
+ [9
+
+ <./img/graphics/local_accuracy.png> <./img/graphics/global_accuracy.png>]
+<img/graphics/distance.png, id=283, 504.88625pt x 314.17375pt>
+File: img/graphics/distance.png Graphic file (type png)
+
+<use img/graphics/distance.png>
+Package pdftex.def Info: img/graphics/distance.png used on input line 295.
+(pdftex.def)             Requested size: 308.06367pt x 191.69843pt.
+
+<img/graphics/n_car.png, id=284, 505.89pt x 312.16624pt>
+File: img/graphics/n_car.png Graphic file (type png)
+
+<use img/graphics/n_car.png>
+Package pdftex.def Info: img/graphics/n_car.png used on input line 295.
+(pdftex.def)             Requested size: 308.06367pt x 190.09723pt.
+ [10
+
+ <./img/graphics/distance.png> <./img/graphics/n_car.png>] <img/screenshot/map2
+.jpg, id=313, 1084.05pt x 1927.2pt>
 File: img/screenshot/map2.jpg Graphic file (type jpg)
 
 <use img/screenshot/map2.jpg>
-Package pdftex.def Info: img/screenshot/map2.jpg used on input line 263.
-(pdftex.def)             Requested size: 102.68962pt x 182.55658pt.
+Package pdftex.def Info: img/screenshot/map2.jpg used on input line 400.
+(pdftex.def)             Requested size: 85.57382pt x 152.12068pt.
 
-<img/screenshot/state_conn.jpg, id=255, 1084.05pt x 1927.2pt>
-File: img/screenshot/state_conn.jpg Graphic file (type jpg)
+<img/screenshot/state_synced_connected.jpg, id=314, 1084.05pt x 1927.2pt>
+File: img/screenshot/state_synced_connected.jpg Graphic file (type jpg)
 
-<use img/screenshot/state_conn.jpg>
-Package pdftex.def Info: img/screenshot/state_conn.jpg used on input line 263.
-(pdftex.def)             Requested size: 102.68962pt x 182.55658pt.
+<use img/screenshot/state_synced_connected.jpg>
+Package pdftex.def Info: img/screenshot/state_synced_connected.jpg used on inpu
+t line 400.
+(pdftex.def)             Requested size: 85.57382pt x 152.12068pt.
 
-<img/screenshot/activity_recogn.jpg, id=256, 1084.05pt x 1927.2pt>
-File: img/screenshot/activity_recogn.jpg Graphic file (type jpg)
-
-<use img/screenshot/activity_recogn.jpg>
-Package pdftex.def Info: img/screenshot/activity_recogn.jpg used on input line 
-263.
-(pdftex.def)             Requested size: 102.68962pt x 182.55658pt.
- [9
-
- <./img/screenshot/map2.jpg> <./img/screenshot/state_conn.jpg> <./img/screensho
-t/activity_recogn.jpg>]
-<img/screenshot/park_event_list.jpg, id=283, 1084.05pt x 1927.2pt>
+<img/screenshot/park_event_list.jpg, id=315, 1084.05pt x 1927.2pt>
 File: img/screenshot/park_event_list.jpg Graphic file (type jpg)
 
 <use img/screenshot/park_event_list.jpg>
 Package pdftex.def Info: img/screenshot/park_event_list.jpg used on input line 
-293.
-(pdftex.def)             Requested size: 102.68962pt x 182.55658pt.
+400.
+(pdftex.def)             Requested size: 85.57382pt x 152.12068pt.
 
-<img/screenshot/last_sync.jpg, id=284, 1084.05pt x 1927.2pt>
+<img/screenshot/last_sync.jpg, id=316, 1084.05pt x 1927.2pt>
 File: img/screenshot/last_sync.jpg Graphic file (type jpg)
 
 <use img/screenshot/last_sync.jpg>
-Package pdftex.def Info: img/screenshot/last_sync.jpg used on input line 293.
-(pdftex.def)             Requested size: 102.68962pt x 182.55658pt.
- [10
+Package pdftex.def Info: img/screenshot/last_sync.jpg used on input line 400.
+(pdftex.def)             Requested size: 85.57382pt x 152.12068pt.
+ [11
 
- <./img/screenshot/park_event_list.jpg> <./img/screenshot/last_sync.jpg>] [11
-
-] [12
+ <./img/screenshot/map2.jpg> <./img/screenshot/state_synced_connected.jpg> <./i
+mg/screenshot/park_event_list.jpg> <./img/screenshot/last_sync.jpg>] [12
 
 ] [13
 
@@ -1225,22 +1248,24 @@ Package pdftex.def Info: img/screenshot/last_sync.jpg used on input line 293.
 
 ] [15
 
-]
-\openout4 = `template.vrb'.
-
- (./template.vrb)
-[16
-
-] [17
+] [16
 
 ]
 \openout4 = `template.vrb'.
 
- (./template.vrb) [18
+ (./template.vrb) [17
 
-] [19
+]
+[18
 
- </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>] [20
+]
+\openout4 = `template.vrb'.
+
+ (./template.vrb) [19
+
+] [20
+
+ </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>] [21
 
 ]
 \tf@nav=\write6
@@ -1252,11 +1277,11 @@ Package pdftex.def Info: img/screenshot/last_sync.jpg used on input line 293.
 \tf@snm=\write8
 \openout8 = `template.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 425.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 425.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 533.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 533.
  (./template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 425.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 425.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 533.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 533.
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1264,13 +1289,13 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 425.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 533.
  ) 
 Here is how much of TeX's memory you used:
- 16953 strings out of 493304
- 309963 string characters out of 6139871
+ 16977 strings out of 493304
+ 310634 string characters out of 6139871
  397397 words of memory out of 5000000
- 19931 multiletter control sequences out of 15000+600000
+ 19949 multiletter control sequences out of 15000+600000
  15958 words of font info for 59 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,16n,66p,916b,804s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1287,10 +1312,10 @@ nts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on template.pdf (20 pages, 2880842 bytes).
+Output written on template.pdf (21 pages, 3267794 bytes).
 PDF statistics:
- 647 PDF objects out of 1000 (max. 8388607)
- 578 compressed objects within 6 object streams
- 42 named destinations out of 1000 (max. 500000)
- 125 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 681 PDF objects out of 1000 (max. 8388607)
+ 604 compressed objects within 7 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 140 words of extra memory for PDF output out of 10000 (max. 10000000)
 

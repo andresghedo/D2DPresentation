@@ -80,6 +80,7 @@
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 
+
 %----------------------------------------------------------------------------------------
 %   TITLE PAGE - TITLE SLIDE 1
 %----------------------------------------------------------------------------------------
@@ -181,21 +182,172 @@
 \end{frame}
 
 
+%----------------------------------------------------------------------------------------
+%   PROBABILITA - SLIDE X
+%----------------------------------------------------------------------------------------
 \begin{frame}
 \frametitle{Probabilità di parcheggio}
 
 \begin{itemize}
   \item Sincronizzazione sugli eventi parcheggio/rilascio della cella \textit{i}
-  \item Eventi parcheggio nella cella i
-  \item Eventi rilascio nella cella i
-  \item Slot totali nella cella i
-  \item Slot occupati nella cella i
-  \item Tassi di occupazione di una cella
+  \item Eventi parcheggio $E\ped{i}\ap{p}$ e rilascio $E\ped{i}\ap{r}$
+  \item Slot totali $N\ped{i}\ap{t}$ noto a priori
+  \item Slot occupati:
+  \\
+  {\centering $N\ped{i}\ap{o} = E\ped{i}\ap{p} - E\ped{i}\ap{r}$\par}
+  \vspace{2mm}
+  \item Tasso di occupazione:
+  \\
+  {\centering $p\ped{i}\ap{o} = \frac{N\ped{i}\ap{o}}{N\ped{i}\ap{t}}$\par}
+  \vspace{2mm}
   \item Probabilità di trovare parcheggio:
   \\
-  \centering a
+  \vspace{4mm}
+  \centering \framebox{$p\ped{i}\ap{f} = 1 - p\ped{i}\ap{o}$}
 \end{itemize}
 \end{frame}
+
+
+%----------------------------------------------------------------------------------------
+%   SIMULAZIONE - SLIDE X
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Simulazione}
+\begin{columns}
+\begin{column}{0.65\textwidth}
+  \begin{itemize}
+    \item OMNeT++, Veins, SUMO
+    \item Zona nord-est di Bologna 1.5km x 2.5km
+    \item Verificare l’efficacia del processo di spreading
+    \item circa 3000 veicoli in 1800 simsec
+    \item Modulo \textit{SmartParking} per modellazione logica
+    \item Tecnologie considerate : 
+      \begin{itemize}
+	\item V2V \textit{802.11p}
+	\item D2D \textit{WiFi Direct} 
+	\item \textit{Bluetooth}
+      \end{itemize}
+  \end{itemize}
+\end{column}
+ 
+  \begin{column}{0.35\textwidth}
+    \begin{figure}
+    \includegraphics[width=\columnwidth]{img/sumo-bolo2.png}
+    \end{figure}
+  \end{column}
+\end{columns}
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
+%   RISULTATI 1 - SLIDE X
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Risultati}
+\begin{itemize}
+  \item convergenza sulla conoscenza della cella corrente e dello scenario generale
+\end{itemize}
+\begin{columns}
+  \begin{column}{0.45\textwidth}
+    \begin{figure}
+    \includegraphics[width=\columnwidth]{img/graphics/local_accuracy.png}
+    \end{figure}
+    
+  \end{column}
+  \begin{column}{0.45\textwidth}
+    \begin{figure}
+    \includegraphics[width=\columnwidth]{img/graphics/global_accuracy.png}
+    \end{figure}
+  \end{column}
+\end{columns}
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
+%   RISULTATI 2 - SLIDE X
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Risultati}
+\begin{columns}
+  \begin{column}{0.45\textwidth}
+    \begin{itemize}
+      \item convergenza sulla conoscenza della cella corrente e dello scenario generale
+    \end{itemize}
+    \begin{figure}
+    \includegraphics[width=\columnwidth]{img/graphics/distance.png}
+    \end{figure}
+    
+  \end{column}
+  \begin{column}{0.45\textwidth}
+    \begin{figure}
+    \includegraphics[width=\columnwidth]{img/graphics/n_car.png}
+    \end{figure}
+  \end{column}
+\end{columns}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%   SCREENSHOT 1 - SLIDE X
+%----------------------------------------------------------------------------------------
+% \begin{frame}
+% \frametitle{Screenshot 1}
+% \begin{columns}
+%   \begin{column}{0.3\textwidth}
+%     \begin{figure}
+%     \raggedleft
+%     \setlength{\fboxsep}{0pt}
+%     \setlength{\fboxrule}{0.1pt}
+%     \fcolorbox{blue}{blue}{\includegraphics[width=\columnwidth]{img/screenshot/map2.jpg}}
+%     \end{figure}
+%   \end{column}
+%   \begin{column}{0.3\textwidth}
+%     \begin{figure}
+%     \raggedleft
+%     \setlength{\fboxsep}{0pt}
+%     \setlength{\fboxrule}{0.1pt}
+%     \fcolorbox{blue}{blue}{\includegraphics[width=\columnwidth]{img/screenshot/state_conn.jpg}}
+%     \end{figure}
+%   \end{column}
+%   \begin{column}{0.3\textwidth}
+%     \begin{figure}
+%     \raggedleft
+%     \setlength{\fboxsep}{0pt}
+%     \setlength{\fboxrule}{0.1pt}
+%     \fcolorbox{blue}{blue}{\includegraphics[width=\columnwidth]{img/screenshot/activity_recogn.jpg}}
+%     \end{figure}
+%   \end{column}
+% \end{columns}
+% \end{frame}
+
+
+%----------------------------------------------------------------------------------------
+%   SCREENSHOT 2 - SLIDE X
+%----------------------------------------------------------------------------------------
+% \begin{frame}
+% \frametitle{Screenshot 2}
+% \begin{columns}
+%   \begin{column}{0.1\textwidth}
+%   \end{column}
+%   \begin{column}{0.3\textwidth}
+%     \begin{figure}
+%     \raggedleft
+%     \setlength{\fboxsep}{0pt}
+%     \setlength{\fboxrule}{0.1pt}
+%     \fcolorbox{blue}{blue}{\includegraphics[width=\columnwidth]{img/screenshot/park_event_list.jpg}}
+%     \end{figure}
+%   \end{column}
+%   \begin{column}{0.3\textwidth}
+%     \begin{figure}
+%     \raggedleft
+%     \setlength{\fboxsep}{0pt}
+%     \setlength{\fboxrule}{0.1pt}
+%     \fcolorbox{blue}{blue}{\includegraphics[width=\columnwidth]{img/screenshot/last_sync.jpg}}
+%     \end{figure}
+%   \end{column}
+%   \begin{column}{0.1\textwidth}
+%   \end{column}
+% \end{columns}
+% \end{frame}
 
 
 %----------------------------------------------------------------------------------------
@@ -204,7 +356,7 @@
 \begin{frame}
 \frametitle{Screenshot 1}
 \begin{columns}
-  \begin{column}{0.3\textwidth}
+  \begin{column}{0.25\textwidth}
     \begin{figure}
     \raggedleft
     \setlength{\fboxsep}{0pt}
@@ -212,35 +364,15 @@
     \fcolorbox{blue}{blue}{\includegraphics[width=\columnwidth]{img/screenshot/map2.jpg}}
     \end{figure}
   \end{column}
-  \begin{column}{0.3\textwidth}
+  \begin{column}{0.25\textwidth}
     \begin{figure}
     \raggedleft
     \setlength{\fboxsep}{0pt}
     \setlength{\fboxrule}{0.1pt}
-    \fcolorbox{blue}{blue}{\includegraphics[width=\columnwidth]{img/screenshot/state_conn.jpg}}
+    \fcolorbox{blue}{blue}{\includegraphics[width=\columnwidth]{img/screenshot/state_synced_connected.jpg}}
     \end{figure}
   \end{column}
-  \begin{column}{0.3\textwidth}
-    \begin{figure}
-    \raggedleft
-    \setlength{\fboxsep}{0pt}
-    \setlength{\fboxrule}{0.1pt}
-    \fcolorbox{blue}{blue}{\includegraphics[width=\columnwidth]{img/screenshot/activity_recogn.jpg}}
-    \end{figure}
-  \end{column}
-\end{columns}
-\end{frame}
-
-
-%----------------------------------------------------------------------------------------
-%   SCREENSHOT 2 - SLIDE X
-%----------------------------------------------------------------------------------------
-\begin{frame}
-\frametitle{Screenshot 2}
-\begin{columns}
-  \begin{column}{0.1\textwidth}
-  \end{column}
-  \begin{column}{0.3\textwidth}
+  \begin{column}{0.25\textwidth}
     \begin{figure}
     \raggedleft
     \setlength{\fboxsep}{0pt}
@@ -248,7 +380,7 @@
     \fcolorbox{blue}{blue}{\includegraphics[width=\columnwidth]{img/screenshot/park_event_list.jpg}}
     \end{figure}
   \end{column}
-  \begin{column}{0.3\textwidth}
+  \begin{column}{0.25\textwidth}
     \begin{figure}
     \raggedleft
     \setlength{\fboxsep}{0pt}
@@ -256,10 +388,9 @@
     \fcolorbox{blue}{blue}{\includegraphics[width=\columnwidth]{img/screenshot/last_sync.jpg}}
     \end{figure}
   \end{column}
-  \begin{column}{0.1\textwidth}
-  \end{column}
 \end{columns}
 \end{frame}
+
 
 %------------------------------------------------
 
