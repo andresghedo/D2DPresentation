@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.12)  11 MAR 2017 09:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.12)  6 MAR 2017 10:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**template.tex
-(./template.tex
+**presentation.tex
+(./presentation.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 78 languages loaded.
 (/usr/share/texmf/tex/latex/beamer/base/beamer.cls
@@ -943,8 +943,8 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 90.
 
-(./template.aux)
-\openout1 = `template.aux'.
+(./presentation.aux)
+\openout1 = `presentation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
 LaTeX Font Info:    ... okay on input line 94.
@@ -1039,9 +1039,9 @@ LaTeX Info: Redefining \ref on input line 94.
 LaTeX Info: Redefining \pageref on input line 94.
 LaTeX Info: Redefining \nameref on input line 94.
 
-(./template.out) (./template.out)
+(./presentation.out) (./presentation.out)
 \@outlinefile=\write5
-\openout5 = `template.out'.
+\openout5 = `presentation.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 94.
@@ -1122,13 +1122,12 @@ italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
 italian.ldf    on input line 94.
 
-(./template.nav)
+(./presentation.nav)
 LaTeX Font Info:    Try loading font information for U+msa on input line 99.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 99.
-
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -1164,158 +1163,135 @@ Package pdftex.def Info: img/arch_soft.png used on input line 185.
 
  <./img/arch_soft.png>] [7
 
+] [8
+
 ]
-<img/sumo-bolo2.png, id=225, 960.58875pt x 700.6175pt>
+<img/sumo-bolo2.png, id=252, 960.58875pt x 700.6175pt>
 File: img/sumo-bolo2.png Graphic file (type png)
 
 <use img/sumo-bolo2.png>
-Package pdftex.def Info: img/sumo-bolo2.png used on input line 242.
+Package pdftex.def Info: img/sumo-bolo2.png used on input line 258.
 (pdftex.def)             Requested size: 119.80544pt x 87.37384pt.
- [8
+ [9
 
  <./img/sumo-bolo2.png>]
-<img/graphics/local_accuracy.png, id=253, 505.89pt x 311.1625pt>
+<img/graphics/local_accuracy.png, id=279, 505.89pt x 311.1625pt>
 File: img/graphics/local_accuracy.png Graphic file (type png)
 
 <use img/graphics/local_accuracy.png>
-Package pdftex.def Info: img/graphics/local_accuracy.png used on input line 266
+Package pdftex.def Info: img/graphics/local_accuracy.png used on input line 282
 .
 (pdftex.def)             Requested size: 154.03183pt x 94.74062pt.
 
-<img/graphics/global_accuracy.png, id=254, 505.89pt x 312.16624pt>
+<img/graphics/global_accuracy.png, id=280, 505.89pt x 312.16624pt>
 File: img/graphics/global_accuracy.png Graphic file (type png)
 
 <use img/graphics/global_accuracy.png>
-Package pdftex.def Info: img/graphics/global_accuracy.png used on input line 26
-6.
+Package pdftex.def Info: img/graphics/global_accuracy.png used on input line 28
+2.
 (pdftex.def)             Requested size: 154.03183pt x 95.04623pt.
- [9
+ [10
 
  <./img/graphics/local_accuracy.png> <./img/graphics/global_accuracy.png>]
-<img/graphics/distance.png, id=283, 504.88625pt x 314.17375pt>
+<img/graphics/distance.png, id=309, 504.88625pt x 314.17375pt>
 File: img/graphics/distance.png Graphic file (type png)
 
 <use img/graphics/distance.png>
-Package pdftex.def Info: img/graphics/distance.png used on input line 295.
+Package pdftex.def Info: img/graphics/distance.png used on input line 311.
 (pdftex.def)             Requested size: 308.06367pt x 191.69843pt.
 
-<img/graphics/n_car.png, id=284, 505.89pt x 312.16624pt>
+<img/graphics/n_car.png, id=310, 505.89pt x 312.16624pt>
 File: img/graphics/n_car.png Graphic file (type png)
 
 <use img/graphics/n_car.png>
-Package pdftex.def Info: img/graphics/n_car.png used on input line 295.
+Package pdftex.def Info: img/graphics/n_car.png used on input line 311.
 (pdftex.def)             Requested size: 308.06367pt x 190.09723pt.
- [10
+ [11
 
  <./img/graphics/distance.png> <./img/graphics/n_car.png>] <img/screenshot/map2
-.jpg, id=313, 1084.05pt x 1927.2pt>
+.jpg, id=339, 1084.05pt x 1927.2pt>
 File: img/screenshot/map2.jpg Graphic file (type jpg)
 
 <use img/screenshot/map2.jpg>
-Package pdftex.def Info: img/screenshot/map2.jpg used on input line 400.
+Package pdftex.def Info: img/screenshot/map2.jpg used on input line 416.
 (pdftex.def)             Requested size: 85.57382pt x 152.12068pt.
 
-<img/screenshot/state_synced_connected.jpg, id=314, 1084.05pt x 1927.2pt>
+<img/screenshot/state_synced_connected.jpg, id=340, 1084.05pt x 1927.2pt>
 File: img/screenshot/state_synced_connected.jpg Graphic file (type jpg)
 
 <use img/screenshot/state_synced_connected.jpg>
 Package pdftex.def Info: img/screenshot/state_synced_connected.jpg used on inpu
-t line 400.
+t line 416.
 (pdftex.def)             Requested size: 85.57382pt x 152.12068pt.
 
-<img/screenshot/park_event_list.jpg, id=315, 1084.05pt x 1927.2pt>
+<img/screenshot/park_event_list.jpg, id=341, 1084.05pt x 1927.2pt>
 File: img/screenshot/park_event_list.jpg Graphic file (type jpg)
 
 <use img/screenshot/park_event_list.jpg>
 Package pdftex.def Info: img/screenshot/park_event_list.jpg used on input line 
-400.
+416.
 (pdftex.def)             Requested size: 85.57382pt x 152.12068pt.
 
-<img/screenshot/last_sync.jpg, id=316, 1084.05pt x 1927.2pt>
+<img/screenshot/last_sync.jpg, id=342, 1084.05pt x 1927.2pt>
 File: img/screenshot/last_sync.jpg Graphic file (type jpg)
 
 <use img/screenshot/last_sync.jpg>
-Package pdftex.def Info: img/screenshot/last_sync.jpg used on input line 400.
+Package pdftex.def Info: img/screenshot/last_sync.jpg used on input line 416.
 (pdftex.def)             Requested size: 85.57382pt x 152.12068pt.
- [11
+ [12
 
  <./img/screenshot/map2.jpg> <./img/screenshot/state_synced_connected.jpg> <./i
-mg/screenshot/park_event_list.jpg> <./img/screenshot/last_sync.jpg>] [12
-
-] [13
+mg/screenshot/park_event_list.jpg> <./img/screenshot/last_sync.jpg>] [13
 
 ] [14
 
-] [15
-
-] [16
-
-]
-\openout4 = `template.vrb'.
-
- (./template.vrb) [17
-
-]
-[18
-
-]
-\openout4 = `template.vrb'.
-
- (./template.vrb) [19
-
-] [20
-
- </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>] [21
-
 ]
 \tf@nav=\write6
-\openout6 = `template.nav'.
+\openout6 = `presentation.nav'.
 
 \tf@toc=\write7
-\openout7 = `template.toc'.
+\openout7 = `presentation.toc'.
 
 \tf@snm=\write8
-\openout8 = `template.snm'.
+\openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 533.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 533.
- (./template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 533.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 533.
-Package rerunfilecheck Info: File `template.out' has not changed.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 431.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 431.
+ (./presentation.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 431.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 431.
+Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 533.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 431.
  ) 
 Here is how much of TeX's memory you used:
- 16977 strings out of 493304
- 310634 string characters out of 6139871
- 397397 words of memory out of 5000000
- 19949 multiletter control sequences out of 15000+600000
- 15958 words of font info for 59 fonts, out of 8000000 for 9000
+ 16809 strings out of 493304
+ 306496 string characters out of 6139871
+ 393413 words of memory out of 5000000
+ 19804 multiletter control sequences out of 15000+600000
+ 15114 words of font info for 56 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,16n,66p,916b,804s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,16n,57p,920b,733s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on template.pdf (21 pages, 3267792 bytes).
+pe1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb>
+Output written on presentation.pdf (14 pages, 3218162 bytes).
 PDF statistics:
- 681 PDF objects out of 1000 (max. 8388607)
- 604 compressed objects within 7 object streams
- 44 named destinations out of 1000 (max. 500000)
- 140 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 466 PDF objects out of 1000 (max. 8388607)
+ 406 compressed objects within 5 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 
