@@ -387,15 +387,16 @@
 \begin{frame}
 \frametitle{Conclusioni}
   \begin{itemize}
-    \item Sistema di Smart Parking con l'obiettivo di ottimizzare i parcheggi e favorire la viabilità generale
-    \item L'utente ottiene in tempo reale la situazione parcheggi nei paraggi
-    \item Tecnologia \textit{WiFi Direct} con alto tasso di partecipazione può ottenere buoni risultati confrontandosi con tecnologie più costose e complesse (\textit{V2V 802.11p})
+    \item OMNeT++, Veins, SUMO
+    \item Zona nord-est di Bologna 1.5km x 2.5km
+    \item Verificare l’efficacia del processo di spreading
+    \item circa 3000 veicoli in 1800 simsec
+    \item Modulo \textit{SmartParking} per modellazione logica
     \item Sviluppi futuri: 
       \begin{itemize}
 	\item risparmio energetico sulle attività D2D
 	\item guidare l'utente verso le zone meno congestionate in base alla destinazione
-	\item prevedere un servizio light centralizzato
-	\item individuare e favorire le sincronizzazioni che permettano di aumentare il processo di spreading
+	\item 
       \end{itemize}
   \end{itemize}
 \end{frame}
