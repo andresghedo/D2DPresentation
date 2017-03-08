@@ -146,13 +146,14 @@
 \begin{frame}
   \frametitle{Il progetto}
   \begin{itemize}
-    \item Sistema di Smart Parking in grado di favorire l'attività di parcheggio all'utente 
+    \item Prototipo di un sistema Smart Parking
+    \item Favorire l'attività di parcheggio all'utente 
     \item Miglior gestione dei parcheggi 
     \item \textit{Crowdsensing} e condivisione dei dati con la comunità
     \item Determinare la probabilità di parcheggio nelle zone limitrofe alla posizione corrente
     \item Assenza di strutture centralizzate
-    \item Disseminazione dell'informazione Device-To-Device (D2D) completamente distribuita
-    \item Meccanismo di spreading automatico e trasparente all'utente
+    \item Disseminazione \textit{Device-To-Device (D2D)}
+    \item Spreading automatico e trasparente all'utente
   \end{itemize}
 \end{frame}
 
@@ -169,7 +170,7 @@
 	\item Alta dinamicità
 	\item Griglia logica suddivide la città
 	\item Per ogni cella si stima la probabilità di parcheggio
-	\item Ruoli dei device durante la sincronizzazione:
+	\item I dispositivi formano topologie a stella:
 	\begin{itemize}
 	  \item Access Point
 	  \item client
@@ -271,10 +272,10 @@
 
 
 %----------------------------------------------------------------------------------------
-%   SCREENSHOT 1 - SLIDE 9
+%   SCREENSHOT - SLIDE 9
 %----------------------------------------------------------------------------------------
 \begin{frame}
-  \frametitle{Screenshot 1}
+  \frametitle{Screenshot}
   \begin{columns}
     \begin{column}{0.25\textwidth}
       \begin{figure}
@@ -318,28 +319,45 @@
 \begin{frame}
   \frametitle{Simulazione e Modellazione}
   \begin{columns}
-    \begin{column}{0.65\textwidth}
+    \begin{column}{0.60\textwidth}
       \begin{itemize}
 	\item OMNeT++, Veins, SUMO
 	\item Zona nord-est di Bologna 1.5km x 2.5km
+	\item $\scriptstyle\mathtt{\sim}$ 3000 veicoli in 1800 simsec
 	\item Verificare l’efficacia del processo di spreading
-	\item circa 3000 veicoli in 1800 simsec
-	\item Modulo \textit{SmartParking} per modellazione logica
-	\item Tecnologie considerate: 
-	  \begin{itemize}
-	    \item V2V \textit{802.11p}
-	    \item D2D \textit{WiFi Direct} 
-	    \item \textit{Bluetooth}
-	  \end{itemize}
       \end{itemize}
     \end{column}
 
-    \begin{column}{0.35\textwidth}
+    \begin{column}{0.40\textwidth}
       \begin{figure}
       \includegraphics[width=\columnwidth]{img/sumo-bolo2.png}
       \end{figure}
     \end{column}
   \end{columns}
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
+%   TABELLA PAR - SLIDE X
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Parametri di simulazione}
+\begin{itemize}
+\item Modulo \textit{SmartParking} per modellazione logica
+\item 10 run indipendenti per tecnologia
+\end{itemize}
+\begin{table}
+\begin{tabular}{l l l}
+\toprule
+\textbf{Technology} & \textbf{range(m)} & \textbf{latency(s)}\\
+\midrule
+\textit{V2V 802.11p} & up to 500 & 0 \\
+\textit{WiFi Direct} & up to 100 & 2-10 \\
+\textit{Bluetooth}  & up to 20 & 5 - 15 \\
+\bottomrule
+\end{tabular}
+\caption{parametri}
+\end{table}
 \end{frame}
 
 
