@@ -102,20 +102,40 @@
 % [shrink=50]
 \begin{frame}
   \frametitle{Indice}
-  \begin{columns}
-    \begin{column}{1\textwidth}
       \begin{itemize}
-	\item Il parcheggio
-	\item Il progetto
-	\item Scenario generale
-	\item Architettura software
-	\item Probabilità di parcheggio
-	\item Tecnologie
-	\item Screenshot
-	\item Simulazione e Modellazione
-	\item Risultati
+	\item Smart Parking: Stato dell'Arte
+	\item Architettura del progetto
+	\item Implementazione e tecnologie utilizzate
+	\item Valutazione e Simulazione
 	\item Conclusioni
       \end{itemize}
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
+%   PROBLEMA DEL PARCHEGGIO - SLIDE 3
+%----------------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Il parcheggio}
+  \begin{columns}
+    \begin{column}{0.55\textwidth}
+      \begin{itemize}
+	\item Il continuo processo di urbanizzazione ha portato al sovraffollamento di autoveicoli nelle città metropolitane
+	\item Più del 30\% della congestione del traffico è causata da utenti in cerca di parcheggio
+	\item Parcheggi on-street
+	\item Conseguenze negative:
+	\begin{itemize}
+	  \item perdita di tempo e denaro
+	  \item inquinamento ambientale (CO\ped{2})
+	  \item peggioramento della qualità di vita
+	\end{itemize}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.45\textwidth}
+      \begin{figure}
+	\raggedleft
+	\includegraphics[width=\columnwidth]{img/co2.jpg}
+      \end{figure}
     \end{column}
   \end{columns}
 \end{frame}
@@ -125,16 +145,27 @@
 %   PROBLEMA DEL PARCHEGGIO - SLIDE 3
 %----------------------------------------------------------------------------------------
 \begin{frame}
-  \frametitle{Il parcheggio}
+  \frametitle{Stato dell'arte}
   \begin{itemize}
-    \item Il continuo processo di urbanizzazione ha portato sovraffollamento di autoveicoli nelle città metropolitane
-    \item Più del 30\% della congestione del traffico è causata da utenti in cerca di parcheggio
-    \item Parcheggi on-street
-    \item Conseguenze negative:
+   \item 3 macrocategorie di sistemi Smart Parking: 
+
     \begin{itemize}
-      \item perdita di tempo e denaro
-      \item inquinamento ambientale (CO\ped{2})
-      \item peggioramento della qualità di vita
+      \item \textbf{Sistemi basati su reti di sensori:}
+      \begin{itemize}
+	\item Alta precisione
+	\item Alti costi di installazione e manutenzione
+      \end{itemize}
+      \item \textbf{Sistemi basati su computer vision:}
+      \begin{itemize}
+	\item Algoritmi di IA
+	\item Alti costi
+      \end{itemize}
+      \item \textbf{Sistemi basati su Crowdsensing e Crowdsourcing:}
+      \begin{itemize}
+	\item Contributo degli utenti
+	\item Intelligenza condivisa
+	\item Bassi costi
+      \end{itemize}
     \end{itemize}
   \end{itemize}
 \end{frame}
@@ -146,13 +177,13 @@
 \begin{frame}
   \frametitle{Il progetto}
   \begin{itemize}
-    \item Sistema di Smart Parking in grado di favorire l'attività di parcheggio all'utente 
-    \item Miglior gestione dei parcheggi 
+    \item Prototipo di un sistema Smart Parking in grado di favorire l'attività di parcheggio all'utente 
     \item \textit{Crowdsensing} e condivisione dei dati con la comunità
-    \item Determinare la probabilità di parcheggio nelle zone limitrofe alla posizione corrente
-    \item Assenza di strutture centralizzate
-    \item Disseminazione dell'informazione Device-To-Device (D2D) completamente distribuita
-    \item Meccanismo di spreading automatico e trasparente all'utente
+    \item Probabilità di parcheggio nelle zone limitrofe alla posizione corrente
+    \item Disseminazione \textit{Device-To-Device (D2D)}
+    \item Spreading automatico e trasparente all'utente
+    \item Sviluppo del prototipo su dispositivi mobili Android
+    \item Analisi simulata tramite tool OMNeT++
   \end{itemize}
 \end{frame}
 
@@ -166,10 +197,9 @@
     \begin{column}{0.6\textwidth}
       \begin{itemize}
 	\item Città metropolitana
-	\item Alta dinamicità
 	\item Griglia logica suddivide la città
 	\item Per ogni cella si stima la probabilità di parcheggio
-	\item Ruoli dei device durante la sincronizzazione:
+	\item Topologie a stella di reti \textit{WiFi Direct}:
 	\begin{itemize}
 	  \item Access Point
 	  \item client
@@ -196,9 +226,9 @@
     \begin{column}{0.5\textwidth}
       \begin{enumerate}
 	\item Componente di \textit{\textbf{Activity Recognition}} rileva eventi di parcheggio e rilascio
-	\item Il \textit{\textbf{Local DB}} salva informazioni sui parcheggi e le ultme sincronizzazioni efettuate
+	\item Il \textit{\textbf{Local DB}} salva informazioni sui parcheggi ed ultime sincronizzazioni effettuate
 	\item Il \textit{\textbf{Controller}} funge da interfaccia verso il database
-	\item Il \textit{\textbf{Dissemination Service}} sincronizza le informazioni in modalità D2D con altri peer nei paraggi
+	\item Il \textit{\textbf{Dissemination Service}} sincronizza le informazioni in modalità D2D con altri peer all'interno del raggio di trasmissione
       \end{enumerate}
     \end{column}
 
@@ -242,24 +272,39 @@
 %----------------------------------------------------------------------------------------
 \begin{frame}
   \frametitle{Tecnologie utilizzate}
-  \begin{itemize}
-    \item SO \textit{\textbf{Android 4.0}} e superiori\vspace{5mm}
-    \item \textit{\textbf{WiFi Direct}}
-    \begin{itemize}\vspace{1mm}
-     \item \textit{\textbf{Peer-To-Peer (P2P) Group}}\vspace{1mm}
-     \item \textit{\textbf{Bonjour beacon}}\vspace{1mm}
-     \item serialized \textit{\textbf{Socket}}\vspace{5mm}
+  \begin{columns}
+   \begin{column}{0.5\textwidth}
+    \begin{itemize}
+      \item SO \textit{\textbf{Android 4.0}} e superiori\vspace{5mm}
+      \item \textit{\textbf{WiFi Direct}}
+      \begin{itemize}\vspace{1mm}
+      \item \textit{\textbf{Peer-To-Peer (P2P) Group}}\vspace{1mm}
+      \item \textit{\textbf{Bonjour beacon}}\vspace{1mm}
+      \item serialized \textit{\textbf{Socket}}\vspace{5mm}
+      \end{itemize}
+      \item \textit{\textbf{SQLite}}\vspace{5mm}
     \end{itemize}
-    \item \textit{\textbf{SQLite}}\vspace{5mm}
-  \end{itemize}
+   \end{column}
+   \begin{column}{0.5\textwidth}
+    \begin{figure}
+      \includegraphics[scale=0.08]{img/android.png}
+    \end{figure}
+     \begin{figure}
+       \includegraphics[scale=1.9]{img/wifidirect.png}
+     \end{figure}
+     \begin{figure}
+       \includegraphics[scale=0.14]{img/sqlite.png}
+     \end{figure}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 
 %----------------------------------------------------------------------------------------
-%   SCREENSHOT 1 - SLIDE 9
+%   SCREENSHOT - SLIDE 9
 %----------------------------------------------------------------------------------------
 \begin{frame}
-  \frametitle{Screenshot 1}
+  \frametitle{Screenshot}
   \begin{columns}
     \begin{column}{0.25\textwidth}
       \begin{figure}
@@ -301,25 +346,18 @@
 %   SIMULAZIONE - SLIDE 10
 %----------------------------------------------------------------------------------------
 \begin{frame}
-  \frametitle{Simulazione e Modellazione}
+  \frametitle{Valutazione e Simulazione}
   \begin{columns}
-    \begin{column}{0.65\textwidth}
+    \begin{column}{0.60\textwidth}
       \begin{itemize}
 	\item OMNeT++, Veins, SUMO
 	\item Zona nord-est di Bologna 1.5km x 2.5km
+	\item $\scriptstyle\mathtt{\sim}$ 3000 veicoli in 1800 simsec
 	\item Verificare l’efficacia del processo di spreading
-	\item circa 3000 veicoli in 1800 simsec
-	\item Modulo \textit{SmartParking} per modellazione logica
-	\item Tecnologie considerate: 
-	  \begin{itemize}
-	    \item V2V \textit{802.11p}
-	    \item D2D \textit{WiFi Direct} 
-	    \item \textit{Bluetooth}
-	  \end{itemize}
       \end{itemize}
     \end{column}
 
-    \begin{column}{0.35\textwidth}
+    \begin{column}{0.40\textwidth}
       \begin{figure}
       \includegraphics[width=\columnwidth]{img/sumo-bolo2.png}
       \end{figure}
@@ -329,55 +367,87 @@
 
 
 %----------------------------------------------------------------------------------------
+%   TABELLA PAR - SLIDE X
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Parametri di simulazione}
+\begin{itemize}
+\item Modulo \textit{SmartParking} per modellazione logica
+\item 10 run indipendenti per tecnologia
+\end{itemize}
+\begin{table}
+\begin{tabular}{l l l}
+\toprule
+\textbf{Technology} & \textbf{range(m)} & \textbf{latency(s)}\\
+\midrule
+\textit{V2V 802.11p} & up to 500 & 0 \\
+\textit{WiFi Direct} & up to 100 & 2-10 \\
+\textit{Bluetooth}  & up to 20 & 5 - 15 \\
+\bottomrule
+\end{tabular}
+%\caption{parametri}
+\end{table}
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
 %   RISULTATI 1 - SLIDE 11
 %----------------------------------------------------------------------------------------
 \begin{frame}
-  \frametitle{Risultati (1)}
+  \frametitle{Risultati - Accuratezza media della cella corrente}
   \begin{itemize}
-    \item convergenza sulla conoscenza della cella corrente e dello scenario generale
+    \item convergenza sulla conoscenza della cella corrente
   \end{itemize}
-  \begin{columns}
-    \begin{column}{0.45\textwidth}
-      \begin{figure}
-	\includegraphics[width=\columnwidth]{img/graphics/local_accuracy.png}
-      \end{figure}
-      
-    \end{column}
-    \begin{column}{0.45\textwidth}
-      \begin{figure}
-	\includegraphics[width=\columnwidth]{img/graphics/global_accuracy.png}
-      \end{figure}
-    \end{column}
-  \end{columns}
+  \begin{figure}
+    \includegraphics[scale=0.45]{img/graphics/local_accuracy.png}
+  \end{figure}
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
+%   RISULTATI 1 - SLIDE 11
+%----------------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Risultati - Accuratezza media dello scenario}
+  \begin{itemize}
+    \item convergenza sulla conoscenza dello scenario generale
+  \end{itemize}
+  \begin{figure}
+    \includegraphics[scale=0.45]{img/graphics/global_accuracy.png}
+  \end{figure}
 \end{frame}
 
 
 %----------------------------------------------------------------------------------------
 %   RISULTATI 2 - SLIDE 12
 %----------------------------------------------------------------------------------------
-\begin{frame}[shrink=40]
-  \frametitle{Risultati (2)}
-  \begin{columns}
-    \begin{column}{0.45\textwidth}
-      \vspace{20mm}
+\begin{frame}
+  \frametitle{Risultati - Accuratezza media in base alla distanza}
+
       \begin{figure}
-      \includegraphics[width=\columnwidth]{img/graphics/distance.png}
+      \includegraphics[scale=0.4]{img/graphics/distance.png}
       \end{figure}
       \begin{itemize}
 	\item  L'accuratezza media decresce all'aumentare della distanza dalla posizione corrente
 	\item  L'accuratezza migliore nel raggio di 500m della posizione corrente (sincronizzazioni su cella corrente e adiacenti)
       \end{itemize}
-    \end{column}
-    \begin{column}{0.45\textwidth}
-      \vspace{10mm}
+ 
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
+%   RISULTATI 2 - SLIDE 12
+%----------------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Risultati - Tasso di partecipazione}
+
       \begin{figure}
-      \includegraphics[width=\columnwidth]{img/graphics/n_car.png}
+      \includegraphics[scale=0.4]{img/graphics/n_car.png}
       \end{figure}
       \begin{itemize}
 	\item  Tasso di partecipazione determinante per la tecnologia D2D \textit{WiFi Direct}
       \end{itemize}
-    \end{column}
-  \end{columns}
+ 
 \end{frame}
 
 
@@ -394,7 +464,6 @@
       \begin{itemize}
 	\item risparmio energetico sulle attività D2D
 	\item guidare l'utente verso le zone meno congestionate in base alla destinazione
-	\item prevedere un servizio light centralizzato
 	\item individuare e favorire le sincronizzazioni che permettano di aumentare il processo di spreading
       \end{itemize}
   \end{itemize}
@@ -413,17 +482,3 @@
 %   FINISH
 %----------------------------------------------------------------------------------------
 \end{document}
-
-
-
-%----------------------------------------------------------------------------------------
-%   CROWDSENSING PRESENTATION SLIDE 4
-%----------------------------------------------------------------------------------------
-% \begin{frame}
-% \frametitle{Il Crowdsensing}
-% \begin{itemize}
-%   \item Condivisione di dati con la collettività
-%   \item Intelligenza condivisa
-%   \item Il singolo contribuisce al benessere collettivo
-% \end{itemize}
-% \end{frame}
