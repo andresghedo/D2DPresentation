@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.12)  10 MAR 2017 09:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.12)  12 MAR 2017 19:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**presentation.tex
-(./presentation.tex
+**presentazione_sghedoni_andrea.tex
+(./presentazione_sghedoni_andrea.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 78 languages loaded.
 (/usr/share/texmf/tex/latex/beamer/base/beamer.cls
@@ -978,8 +978,8 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 82.
 
-(./presentation.aux)
-\openout1 = `presentation.aux'.
+(./presentazione_sghedoni_andrea.aux)
+\openout1 = `presentazione_sghedoni_andrea.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
 LaTeX Font Info:    ... okay on input line 86.
@@ -1078,9 +1078,9 @@ LaTeX Info: Redefining \ref on input line 86.
 LaTeX Info: Redefining \pageref on input line 86.
 LaTeX Info: Redefining \nameref on input line 86.
 
-(./presentation.out) (./presentation.out)
+(./presentazione_sghedoni_andrea.out) (./presentazione_sghedoni_andrea.out)
 \@outlinefile=\write5
-\openout5 = `presentation.out'.
+\openout5 = `presentazione_sghedoni_andrea.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 86.
@@ -1161,13 +1161,12 @@ italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
 italian.ldf    on input line 86.
 
-(./presentation.nav)
+(./presentazione_sghedoni_andrea.nav)
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 96.
  (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 96.
-
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1377,32 +1376,33 @@ Package pdftex.def Info: img/graphics/n_car.png used on input line 453.
 
 ]
 \tf@nav=\write6
-\openout6 = `presentation.nav'.
+\openout6 = `presentazione_sghedoni_andrea.nav'.
 
 \tf@toc=\write7
-\openout7 = `presentation.toc'.
+\openout7 = `presentazione_sghedoni_andrea.toc'.
 
 \tf@snm=\write8
-\openout8 = `presentation.snm'.
+\openout8 = `presentazione_sghedoni_andrea.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 486.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 486.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 484.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 484.
 
-(./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 486.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 486.
-Package rerunfilecheck Info: File `presentation.out' has not changed.
+(./presentazione_sghedoni_andrea.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 484.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 484.
+Package rerunfilecheck Info: File `presentazione_sghedoni_andrea.out' has not c
+hanged.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 486.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 484.
  ) 
 Here is how much of TeX's memory you used:
  17067 strings out of 493304
- 311807 string characters out of 6139871
- 393579 words of memory out of 5000000
+ 312062 string characters out of 6139871
+ 393588 words of memory out of 5000000
  20016 multiletter control sequences out of 15000+600000
  76866 words of font info for 72 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,16n,58p,920b,825s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,16n,58p,937b,825s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathsy.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/tex
@@ -1414,7 +1414,7 @@ s/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb>
 usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1
 /public/lm/lmsso8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on presentation.pdf (18 pages, 3528870 bytes).
+Output written on presentazione_sghedoni_andrea.pdf (18 pages, 3528728 bytes).
 PDF statistics:
  596 PDF objects out of 1000 (max. 8388607)
  521 compressed objects within 6 object streams
